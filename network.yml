@@ -235,13 +235,13 @@ Outputs:
       Name: !Sub ${EnvironmentName}-PRIV-NETS
 
   PublicSubnet1:
-    Description: A Ref to the Kitchat Private Subnets
-    Value: !Ref PrivateSubnet1
+    Description: A Ref to the Kitchat Public Subnets
+    Value: !Ref PublicSubnet1
     Export:
       Name: !Sub ${EnvironmentName}-PUB1-SN
   PublicSubnet2:
-    Description: A Ref to the Kitchat Private Subnets
-    Value: !Ref PrivateSubnet2
+    Description: A Ref to the Kitchat Public Subnets
+    Value: !Ref PublicSubnet2
     Export:
       Name: !Sub ${EnvironmentName}-PUB2-SN
   
